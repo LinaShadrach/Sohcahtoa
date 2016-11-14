@@ -2,37 +2,21 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Mad Libs</title>
+    <title>Sohcahtoa</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>Fill in the blanks to write your story!</h1>
-    <form action='/story'>
+    <h1>Fill in the blanks to calculate the dimensions of your triangle!</h1>
+    <form action='/displayTriangle'>
       <div class='form-group'>
-        <label for='person1'>A name</label>
-        <input id='person1' name='person1' class='form-control' type='text'>
+        <label for='angle'>Enter the angle of your triangle:</label>
+        <input id='angle' name='angle' class='form-control' type='text'>
       </div>
       <div class='form-group'>
-        <label for='person2'>Another name</label>
-        <input id='person2' name='person2' class='form-control' type='text'>
+        <label for='leg'>Enter the length of a side: </label>
+        <input id='leg' name='leg' class='form-control' type='text'>
       </div>
-      <div class='form-group'>
-        <label for='animal'>An animal</label>
-        <input id='animal' name='animal' class='form-control' type='text'>
-      </div>
-      <div class='form-group'>
-        <label for='exclamation'>An exclamation</label>
-        <input id='exclamation' name='exclamation' class='form-control' type='text'>
-      </div>
-      <div class='form-group'>
-        <label for='verb'>A past tense verb</label>
-        <input id='verb' name='verb' class='form-control' type='text'>
-      </div>
-      <div class='form-group'>
-        <label for='noun'>A noun</label>
-        <input id='noun' name='noun' class='form-control' type='text'>
-      </div>
-      <button type='submit' class='btn'>Show me the story!</button>
+      <button type="submit" name="button">Submit</button>
     </form>
   </body>
 </html>
