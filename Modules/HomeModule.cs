@@ -13,10 +13,10 @@ namespace Sohcahtoa
             Get ["/displayTriangle"] = _ => {
                 Triangle myTriangle = new Triangle();
                 myTriangle.SetAngle(double.Parse(Request.Query["angle"]));
-                myTriangle.SetOpposite(double.Parse(Request.Query["leg"]));
+                myTriangle.SetSide(Request.Query["side"]);
+                myTriangle.SetLeg(double.Parse(Request.Query["leg"]));
                 myTriangle.SetAngleInRad(myTriangle.GetAngle());
-                myTriangle.DetermineHypotenuse();
-                myTriangle.DetermineAdjacent();
+                myTriangle.makeTriangle();
                 return View["displayTriangle.cshtml", myTriangle];
             };
         }
