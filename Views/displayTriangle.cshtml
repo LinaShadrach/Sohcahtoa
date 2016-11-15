@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>SohCahToa</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-  </head>
-  <body>
-    <h1>Triangle Dimensions</h1>
-    <ul>
-        <li>@Model.GetAngle()</li>
-        <li>@Model.GetOpposite()</li>
-        <li>@Model.GetAdjacent()</li>
-        <li>@Model.GetHypotenuse()</li>
-    </ul>
+    <head>
+        <meta charset='utf-8'>
+        <title>SohCahToa</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="Content/css/styles.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Triangle Dimensions</h1>
+            <div height="300" width="300" id="triContainer">
+                <div class="row">
+
+                    <div class="col-md-1">
+
+                    <p></p>
+                    </div>
+                </div>
+            </div>
+            <table style="width:30%">
+              <tr>
+                <td>Adjacent: @Model.GetAdjacent()</td>
+                <td><img height="150" width="150" src="Content/img/triangle.png" alt="" /></td>
+                <td>Hypotenuse: @Model.GetHypotenuse()</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Opposite: @Model.GetOpposite()</td>
+                <td></td>
+              </tr>
+        </div>
   </body>
 </html>

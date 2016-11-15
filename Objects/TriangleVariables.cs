@@ -125,7 +125,4 @@ namespace Sohcahtoa.Objects
 
 
     }
-
-
-
 }
